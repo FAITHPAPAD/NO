@@ -193,7 +193,7 @@ def execute_attack(user_id, target, port, time):
 @bot.message_handler(commands=['bgmi'])
 def handle_attack(message):
     user_id = str(message.chat.id)
-    cooldown_time = 120  # Cooldown in seconds (e.g., 60 seconds)
+    cooldown_time = 5  # Cooldown in seconds (e.g., 60 seconds)
 
     # Check if the user has VIP access
     if user_id in users:
